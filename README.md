@@ -4,11 +4,11 @@
 
 ## Reference
 DOC
-- https://docs.camunda.io/
-- https://docs.camunda.org/
+- C8 https://docs.camunda.io
+- C7 https://docs.camunda.org
 
 FORUM
-- https://forum.camunda.io/
+- https://forum.camunda.io
 
 OPEN SOURCE
 - https://github.com/camunda
