@@ -1,5 +1,9 @@
 # About Camunda
 
+## Evolution …
+
+![](img/camunda_evolution.png)
+
 ## [Architecture](https://docs.camunda.org/manual/latest/introduction/architecture/)
 
 ### Process Engine Architecture
@@ -90,13 +94,7 @@ https://downloads.camunda.cloud/release/camunda-bpm/run/7.18/
 # https://docs.camunda.org/manual/7.18/user-guide/camunda-bpm-run/
 $ cd camunda-bpm-run-7.18.0 
 $ sh start.sh 
-
- ____                                 _         ____  _       _    __                        ____              
-/ ___| __ _ _ __ ___  _   _ _ __   __| | __ _  |  _ \| | __ _| |_ / _| ___  _ __ _ __ ___   |  _ \ _   _ _ __  
-| |   / _` | '_ ` _ \| | | | '_ \ / _` |/ _` | | |_) | |/ _` | __| |_ / _ \| '__| '_ ` _ \  | |_) | | | | '_ \ 
-| |__| (_| | | | | | | |_| | | | | (_| | (_| | |  __/| | (_| | |_|  _| (_) | |  | | | | | | |  _ <| |_| | | | |
-\____/\__,_|_| |_| |_|\__,_|_| |_|\__,_|\__,_| |_|   |_|\__,_|\__|_|  \___/|_|  |_| |_| |_| |_| \_\\__,_|_| |_|
-
+...
   Spring-Boot:  (v2.7.3)
   Camunda Platform: (v7.18.0)
 ```
