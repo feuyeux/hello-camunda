@@ -7,6 +7,7 @@
 ### [Process solutions C7 VS C8](https://docs.camunda.io/docs/guides/migrating-from-camunda-platform-7/#process-solutions-using-spring-boot) 
 
 <img src="https://docs.camunda.io/assets/images/architecture-spring-boot-bf6dd222a3c1faed75636d5375650b15.png" height="300px"/>
+
 > https://docs.camunda.io/assets/images/architecture-spring-boot-bf6dd222a3c1faed75636d5375650b15.png
 
 ### The current recommendation
@@ -14,7 +15,6 @@
 <img src="img/remote_engine_7.png"  height="300px"/>
 
 <img src="img/remote_engine_8.png"  height="300px"/>
-
 
 
 <img src="https://docs.camunda.io/assets/images/camunda7-vs-camunda8-deployment-view-3c6a386df3e4a662bf5ced84ee83edee.png"  height="300px"/>
