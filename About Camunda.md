@@ -2,7 +2,22 @@
 
 ## Evolution …
 
-![](img/camunda_evolution.png)
+<img src="img/camunda_evolution.png" height="300px" align="left"/>
+
+### [Process solutions C7 VS C8](https://docs.camunda.io/docs/guides/migrating-from-camunda-platform-7/#process-solutions-using-spring-boot) 
+
+<img src="https://docs.camunda.io/assets/images/architecture-spring-boot-bf6dd222a3c1faed75636d5375650b15.png" height="300px" align="left"/>
+> https://docs.camunda.io/assets/images/architecture-spring-boot-bf6dd222a3c1faed75636d5375650b15.png
+
+### The current recommendation
+
+<img src="img/remote_engine_7.png"  height="300px" align="left"/>
+
+<img src="img/remote_engine_8.png"  height="300px" align="left"/>
+
+
+
+<img src="https://docs.camunda.io/assets/images/camunda7-vs-camunda8-deployment-view-3c6a386df3e4a662bf5ced84ee83edee.png"  height="300px" align="left"/>
 
 ## [Architecture](https://docs.camunda.org/manual/latest/introduction/architecture/)
 
@@ -53,14 +68,14 @@
 >  - <https://docs.camunda.org/manual/latest/user-guide/quarkus-integration/>
 >  - <https://docs.camunda.org/manual/latest/user-guide/testing/>
 
-#### Clustering Model
+#### Remote Process Engine Cluster
 
 ![](https://docs.camunda.org/manual/latest/introduction/img/clustered-process-engine.png)
 
 Container-Managed Process Engine and Camunda Cockpit, Tasklist, Admin
 
-- Apache Tomcat 9.0
-- Wildfly Application Server 15.0 / 16.0 / 17.0 / 18.0 / 19.0 / 20.0 / 21.0 / 22.0 / 23.0 / 24.0 / 25.0 / 26.0
+- Apache Tomcat
+- Wildfly Application Server
 - …
 
 ## Modeler
@@ -109,7 +124,7 @@ demo/demo
 https://github.com/camunda-community-hub/awesome-camunda-7-external-clients
 
 
-## Spin
+## Spin(C8 doesn’t support)
 
 Camunda Spin is a library for simple XML and JSON processing on the JVM (Java Virtual Machine), targeting Java and JVM-based scripting languages such as Groovy, JRuby, Jython, JavaScript and Java Expression Language. It provides a comprehensible fluent API for working with different data formats through lightweight wrapper objects.
 
@@ -154,4 +169,10 @@ String jdkVersion = productInternals.getJdk().getVersion();
 ### FORUM
 
 - <https://forum.camunda.io>
+
+### TUTORIAL
+
+[Camunda Platform 7 Tutorial](https://www.youtube.com/watch?v=sgcSm7YneTs&list=PLJG25HlmvsOVssaiPmavxv3htN_dXS3BW)
+
+source code: https://github.com/camunda-community-hub/Camunda-7-Spring-Boot-Tutorial-Lafayette
 

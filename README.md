@@ -24,6 +24,10 @@ There are four ways of declaring how to invoke Java logic:
 
 
 
+Camunda Platform 7 uses [JUEL (Java Unified Expression Language)](https://docs.camunda.org/manual/latest/user-guide/process-engine/expression-language/) as the expression language. In the embedded engine scenario, expressions can even read into beans (Java object instances) in the application.
+
+Camunda Platform 8 uses [FEEL (Friendly-Enough Expression Language](https://docs.camunda.io/docs/components/modeler/feel/what-is-feel/) and expressions can only access the process instance data and variables.
+
 ## 2 External tasks
 
 
