@@ -1,0 +1,19 @@
+{
+  "name": "external-task",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "feuyeux@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "camunda-external-task-client-js": "^3.0.0"
+  },
+  "devDependencies": {
+    "open": "^9.1.0"
+  }
+}

@@ -28,3 +28,5 @@ hs_err_pid*
 *h2*
 
 .DS_Store
+
+node_modules
