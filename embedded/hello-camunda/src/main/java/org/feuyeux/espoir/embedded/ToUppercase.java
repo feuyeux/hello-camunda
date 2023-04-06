@@ -5,8 +5,8 @@ import org.camunda.bpm.engine.delegate.JavaDelegate;
 
 public class ToUppercase implements JavaDelegate {
   public void execute(DelegateExecution execution) throws Exception {
-    String var = (String) execution.getVariable("entrée");
+    String var = (String) execution.getVariable("x1");
     var = var.toUpperCase();
-    execution.setVariable("sortie", var);
+    execution.setVariable("x2", var);
   }
 }
