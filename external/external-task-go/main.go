@@ -11,8 +11,6 @@ import (
 func main() {
 	client := camunda_client_go.NewClient(camunda_client_go.ClientOptions{
 		EndpointUrl: "http://localhost:8080/engine-rest",
-		ApiUser:     "admin",
-		ApiPassword: "123456",
 		Timeout:     time.Second * 10_000,
 	})
 
@@ -27,20 +25,30 @@ func main() {
 		LongPollingTimeout: 500 * time.Second,
 	}, logger)
 
+	processDefinitionId := "Process_external_asking"
 	proc.AddHandler(
 		[]*camunda_client_go.QueryFetchAndLockTopic{
-			{TopicName: ""},
+			{TopicName: "ask_lower"},
+			{ProcessDefinitionId: &processDefinitionId},
 		},
 		func(ctx *processor.Context) error {
-			x := ctx.Task.Variables["x"].Value.(string)
-			t := ctx.Task.Variables["x"].Type
-			i := ctx.Task.Variables["x"].ValueInfo
-			fmt.Println("x=", x)
-			x = strings.ToUpper(x)
-			ctx.Task.Variables["x"] = camunda_client_go.Variable{Value: x, Type: t, ValueInfo: i}
-			//ctx.HandleFailure()
-			ctx.Complete(processor.QueryComplete{})
+			x3 := ctx.Task.Variables["x3"].Value.(string)
+			fmt.Printf("x3=%s", x3)
+			x4 := strings.ToLower(x3)
+
+			err := ctx.Complete(processor.QueryComplete{
+				Variables: &map[string]camunda_client_go.Variable{
+					"x4": {Value: x4, Type: "string"},
+				},
+			})
+			if err != nil {
+				fmt.Printf("Error set complete task %s: %s\n", ctx.Task.Id, err)
+				return ctx.HandleFailure(processor.QueryHandleFailure{})
+			}
+
+			fmt.Printf("Task %s completed\n", ctx.Task.Id)
 			return nil
 		},
 	)
+	select {}
 }

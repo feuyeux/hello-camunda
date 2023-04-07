@@ -1,4 +1,4 @@
-import {Client, logger, Variables} from "camunda-external-task-client-js"
+import { Client, logger, Variables } from "camunda-external-task-client-js"
 
 const config = {
     baseUrl: 'http://localhost:8080/engine-rest',
@@ -8,12 +8,12 @@ const config = {
 
 const client = new Client(config)
 
-client.subscribe('pay', {processDefinitionKey: "Process_shopping"},
-    async function ({task, taskService}) {
-        const size = task.variables.get('size')
-        const count = task.variables.get('count')
-        console.log(`下单尺寸:${size} 数量:${count}`)
-        const processVariables = new Variables().set("toWhere", "shanghai China")
+client.subscribe('ask_prefix', { processDefinitionKey: "Process_external_asking" },
+    async function ({ task, taskService }) {
+        const x2 = task.variables.get('x2')
+        const x3 = task.executionId +"_"+ x2
+        console.log(`x2:${x2} x3:${x3}`)
+        const processVariables = new Variables().set("x3", x3)
         try {
             await taskService.complete(task, processVariables)
             console.log("Task completed")
