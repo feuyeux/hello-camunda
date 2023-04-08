@@ -4,11 +4,20 @@
 
 <img src="img/camunda_evolution.png" height="300px"/>
 
+<img src="img/c8-version.png" height="300px"/>
+
 ### [Process solutions C7 VS C8](https://docs.camunda.io/docs/guides/migrating-from-camunda-platform-7/#process-solutions-using-spring-boot) 
 
 <img src="img/architecture-spring-boot.png" height="300px"/>
 
 > https://docs.camunda.io/assets/images/architecture-spring-boot-bf6dd222a3c1faed75636d5375650b15.png
+
+|  |Design | Automate | Improve |
+| :---|:--- |:---| :--- |
+| C7| Modeler <br/># Forms | Workflow Engine<br/>Decision Engine<br/>Tasklist<br/>Cockpit | Optimize |
+| C8 | Modeler <br/># Connectors <br/>& Integration Framework <br/>& Forms | Zeebe<br/>Tasklist<br/>Operate | Optimize |
+
+<img src="img/c8-components.png" height="300px"/>
 
 ### The current recommendation
 
